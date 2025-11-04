@@ -1,4 +1,4 @@
-package com.oracle.dblearn.service.utils;
+package com.oracle.dblearn.infra.utils;
 
 import lombok.Getter;
 

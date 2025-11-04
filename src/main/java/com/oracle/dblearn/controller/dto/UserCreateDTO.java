@@ -1,20 +1,24 @@
-package com.oracle.dblearn.model.dto;
+package com.oracle.dblearn.controller.dto;
 
 import jakarta.validation.constraints.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserCreateDTO {
 
     @NotBlank(message = "Name is mandatory")
     private String name;
 
-    @NotNull(message = "Password is mandatory")
+    @NotBlank(message = "Password is mandatory")
     private String password;
 
-    @NotNull(message = "Email is mandatory")
+    @NotBlank(message = "Email is mandatory")
     @Email(message = "Email should be valid")
     private String email;
 
